@@ -9,7 +9,7 @@ import {
   minLengthMobileNo,
   digit,
 } from "../../helpers/validation";
-import { ReactComponent as IconPhoneFill } from "bootstrap-icons/icons/phone-fill.svg";
+import { ReactComponent as IconPhone } from "bootstrap-icons/icons/phone.svg";
 
 const ForgotPasswordForm = (props) => {
   const { handleSubmit, submitting, onSubmit, submitFailed } = props;
@@ -25,24 +25,26 @@ const ForgotPasswordForm = (props) => {
         label="Mobile no"
         component={renderFormGroupField}
         placeholder="Mobile no without country code"
-        icon={IconPhoneFill}
+        icon={IconPhone}
         validate={[required, maxLengthMobileNo, minLengthMobileNo, digit]}
         required={true}
         max="999999999999999"
         min="9999"
         className="mb-3"
       />
-      <button
-        type="submit"
-        className="btn btn-primary btn-block mb-3"
-        disabled={submitting}
-      >
-        Submit
-      </button>
-      <Link className="float-left" to="/account/signup" title="Sign Up">
+      <div className="d-grid">
+        <button
+          type="submit"
+          className="btn btn-primary mb-3"
+          disabled={submitting}
+        >
+          Submit
+        </button>
+      </div>
+      <Link className="float-start" to="/account/signup" title="Sign Up">
         Create your account
       </Link>
-      <Link className="float-right" to="/account/signin" title="Sign In">
+      <Link className="float-end" to="/account/signin" title="Sign In">
         Sign In
       </Link>
     </form>

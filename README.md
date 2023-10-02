@@ -17,8 +17,6 @@ Built with React JS and Bootstrap 5
 
 - [Quick start](#quick-start)
 - [What's included](#whats-included)
-- [Thanks](#thanks)
-- [Copyright and license](#copyright-and-license)
 
 ## Quick start
 

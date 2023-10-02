@@ -19,8 +19,8 @@ import {
   faFacebookF,
   faGoogle,
 } from "@fortawesome/free-brands-svg-icons";
-import { ReactComponent as IconPhoneFill } from "bootstrap-icons/icons/phone-fill.svg";
-import { ReactComponent as IconShieldLockFill } from "bootstrap-icons/icons/shield-lock-fill.svg";
+import { ReactComponent as IconPhone } from "bootstrap-icons/icons/phone.svg";
+import { ReactComponent as IconShieldLock } from "bootstrap-icons/icons/shield-lock.svg";
 
 const SignUpForm = (props) => {
   const { handleSubmit, submitting, onSubmit, submitFailed } = props;
@@ -60,7 +60,7 @@ const SignUpForm = (props) => {
         label="Mobile no"
         component={renderFormGroupField}
         placeholder="Mobile no without country code"
-        icon={IconPhoneFill}
+        icon={IconPhone}
         validate={[required, maxLengthMobileNo, minLengthMobileNo, digit]}
         required={true}
         max="999999999999999"
@@ -73,25 +73,27 @@ const SignUpForm = (props) => {
         label="Your password"
         component={renderFormGroupField}
         placeholder="******"
-        icon={IconShieldLockFill}
+        icon={IconShieldLock}
         validate={[required, maxLength20, minLength8]}
         required={true}
         maxLength="20"
         minLength="8"
         className="mb-3"
       />
-      <button
-        type="submit"
-        className="btn btn-primary btn-block mb-3"
-        disabled={submitting}
-      >
-        Create
-      </button>
-      <Link className="float-left" to="/account/signin" title="Sign In">
+      <div className="d-grid">
+        <button
+          type="submit"
+          className="btn btn-primary mb-3"
+          disabled={submitting}
+        >
+          Create
+        </button>
+      </div>
+      <Link className="float-start" to="/account/signin" title="Sign In">
         Sing In
       </Link>
       <Link
-        className="float-right"
+        className="float-end"
         to="/account/forgotpassword"
         title="Forgot Password"
       >
@@ -104,13 +106,13 @@ const SignUpForm = (props) => {
           <p className="text-muted small">Or you can join with</p>
         </div>
         <div className="col- text-center">
-          <Link to="/" className="btn text-white bg-twitter mr-3">
+          <Link to="/" className="btn btn-light text-white bg-twitter me-3">
             <FontAwesomeIcon icon={faTwitter} />
           </Link>
-          <Link to="/" className="btn text-white mr-3 bg-facebook">
+          <Link to="/" className="btn btn-light text-white me-3 bg-facebook">
             <FontAwesomeIcon icon={faFacebookF} className="mx-1" />
           </Link>
-          <Link to="/" className="btn text-white mr-3 bg-google">
+          <Link to="/" className="btn btn-light text-white me-3 bg-google">
             <FontAwesomeIcon icon={faGoogle} className="mx-1" />
           </Link>
         </div>

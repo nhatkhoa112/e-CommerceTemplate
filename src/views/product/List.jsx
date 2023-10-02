@@ -85,15 +85,15 @@ class ProductListView extends Component {
             </div>
             <div className="col-md-9">
               <div className="row">
-                <div className="col-md-8">
-                  <span className="align-middle font-weight-bold">
+                <div className="col-7">
+                  <span className="align-middle fw-bold">
                     {this.state.totalItems} results for{" "}
                     <span className="text-warning">"t-shirts"</span>
                   </span>
                 </div>
-                <div className="col-md-4">
+                <div className="col-5 d-flex justify-content-end">
                   <select
-                    className="form-select mw-180 float-left"
+                    className="form-select mw-180 float-start"
                     aria-label="Default select"
                   >
                     <option value={1}>Most Popular</option>
@@ -102,7 +102,7 @@ class ProductListView extends Component {
                     <option value={4}>Price low to high</option>
                     <option value={4}>Price high to low</option>
                   </select>
-                  <div className="btn-group ml-3" role="group">
+                  <div className="btn-group ms-3" role="group">
                     <button
                       aria-label="Grid"
                       type="button"
