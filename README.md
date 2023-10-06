@@ -13,6 +13,16 @@
 
 Built with React JS and Bootstrap 5
 
+## Screen shot
+![ScreenShot](./Screenshot.png)
+
+![ScreenShot2](./Screenshot1.png)
+
+![ScreenShot3](./Screenshot2.png)
+
+![ScreenShot4](./Screenshot3.png)
+
+
 ## Table of contents
 
 - [Quick start](#quick-start)
@@ -46,3 +56,14 @@ Built with React JS and Bootstrap 5
 - Blog Detail Page
 - Error Page (404, 500)
 
+## Thanks
+
+<a href="https://www.getbootstrap.com/" title="Bootstrap" target="_blank">
+  <img src="https://skillicons.dev/icons?i=bootstrap" alt="Bootstrap Logo">
+</a>
+<a href="https://reactjs.org/" title="React JS" target="_blank">
+  <img src="https://skillicons.dev/icons?i=react" alt="React Logo">
+</a>
+<a href="https://fontawesome.com/" title="Font Awesome" target="_blank">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Font_Awesome_logomark_blue.svg" alt="Font Awesome Logo" width="48" height="48">
+</a>
